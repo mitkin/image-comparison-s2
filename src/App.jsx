@@ -9,6 +9,9 @@ import {
   ReactCompareSliderImage
 } from "react-compare-slider";
 
+import s2 from './aerial.png'
+import s2_x2 from './aerial_coarse1_auto_x2.jpg'
+
 /** Keep a value within a range of 0-100. */
 const toRange = (value) => Math.min(Math.max(value, 0), 100);
 
@@ -56,14 +59,15 @@ export const App = ({ style, ...props }) => {
         onKeyDown={handleKeyDown}
         itemOne={
           <ReactCompareSliderImage
-            src="https://images.unsplash.com/photo-1580458148391-8c4951dc1465?auto=format&fit=crop&w=1500&q=80"
-            style={{ filter: "grayscale(1)" }}
+            src={s2}
+            // style={{ filter: "grayscale(1)" }}
             alt="one"
           />
         }
         itemTwo={
           <ReactCompareSliderImage
-            src="https://images.unsplash.com/photo-1580458148391-8c4951dc1465?auto=format&fit=crop&w=1500&q=80"
+            src={s2_x2}
+            // src="https://images.unsplash.com/photo-1580458148391-8c4951dc1465?auto=format&fit=crop&w=1500&q=80"
             alt="two"
           />
         }
